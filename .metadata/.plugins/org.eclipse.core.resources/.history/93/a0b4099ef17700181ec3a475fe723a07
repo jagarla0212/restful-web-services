@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+		targetNamespace="http://springwebservice.com/courses" 
+		xmlns:tns="http://springwebservice.com/courses" elementFormDefault="qualified">
+		<element name="GetCourseDetailsRequest">
+			<complexType>
+				<sequence>
+					<element name="Id" type="int"/>
+				</sequence>
+			</complexType>
+		</element>
+		
+		<element name="GetCourseDetailsResponse">
+			<complexType>
+				<sequence>
+					<element name="CourseDetails" type="tns:CourseDetailsType"/>
+				</sequence>	
+			</complexType>
+		</element>
+		<element name="GetAllCourseDetailsRequest">
+			<complexType/>
+		</element>
+		
+		<element name="GetAllCourseDetailsResponse">
+			<complexType>
+				<sequence>
+					<element name="CourseDetails" type="tns:CourseDetailsType" maxOccurs="unbounded"/>
+				</sequence>	
+			</complexType>
+		</element>
+		
+		<!-- <element name="DeleteCourseRequest">
+			<complexType>
+				<sequence>
+					<element name="Id" type="int"/>
+				</sequence>
+			</complexType>
+		</element>
+		
+		<element name="DeleteCourseResponse">
+		<complexType>
+				<sequence>
+					<element name="Status" type="tns:StatusType"/>
+				</sequence>
+			</complexType>
+		</element>
+		
+		<simpleType name="StatusType">
+				<restriction base="string">
+					<enumeration value="Success"/>
+					<enumeration value="Failed"/>
+				</restriction>
+		</simpleType>
+		 -->
+		<complexType  name ="CourseDetailsType">
+			<sequence>
+				<element name="Id" type="int"/>
+				<element name="Name" type="string"/>
+				<element name="Description" type="string"/>
+			</sequence>
+		</complexType>
+	
+		
+</schema>

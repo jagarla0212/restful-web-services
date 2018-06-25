@@ -1,0 +1,21 @@
+package com.springboot.demo.sringwithboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class SringWithBootApplication {
+
+	public static void main(String[] args) {
+		
+		//BinarySearchImpl binarySearch = new BinarySearchImpl(new BubbleSortAlgorithm());
+		
+		
+		ApplicationContext context = SpringApplication.run(SringWithBootApplication.class, args);
+		
+		BinarySearchImpl binarySearch = context.getBean(BinarySearchImpl.class);
+		int result = binarySearch.binarySearch(new int[] {1,2,3}, 4);
+		System.out.println(result);
+	}
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetCourseDetailsResponse xmlnsxmlns="http://springwebservice.com/courses">
+<CourseDetails>
+	<Id>123</Id>
+	<Name>name</Name>
+	<Description>description</Description>
+</CourseDetails>
+
+</GetCourseDetailsResponse>

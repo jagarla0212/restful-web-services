@@ -1,0 +1,19 @@
+package com.springboot.demo.sringwithboot;
+
+public class BinarySearchImpl {
+	public Sorting sorting ;
+
+	public BinarySearchImpl(Sorting sorting) {
+		super();
+		this.sorting = sorting;
+	}
+
+
+	public int binarySearch(int[] numbers, int number) {
+		int[] result = sorting.sort(numbers, number);
+		
+		return 5;
+		
+	}
+	
+}

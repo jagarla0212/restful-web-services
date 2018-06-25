@@ -1,0 +1,5 @@
+package com.restful;
+
+public class User {
+
+}

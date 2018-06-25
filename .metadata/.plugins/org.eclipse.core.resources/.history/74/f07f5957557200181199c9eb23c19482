@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:SchemLocation="http://www.springframework.org/schma/beans http://www.springframework.org/schma/beans/spring-beans.xsd">
+		
+		<bean id ="emp1" class ="com.test.Employee">
+		<property name="name" value="Saathvik"/>
+		<property name="age" value="9"/>
+		<property name="grade" value="4th"/>
+		</bean>
+	<bean id ="emp2" class ="com.test.Employee">
+		<property name="name" value="Kanthi"/>
+		<property name="age" value="17"/>
+		<property name="grade" value="11th"/>
+		</bean>
+</beans>
+

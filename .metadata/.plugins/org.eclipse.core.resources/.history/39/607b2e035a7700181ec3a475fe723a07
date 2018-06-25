@@ -1,0 +1,6 @@
+package com.soap.webservices.soapmanagement;
+
+@Endpoint
+public class GetCourseDetails {
+
+}

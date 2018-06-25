@@ -1,0 +1,5 @@
+package com.soap.webservices.soapmanagement.bean;
+
+public class Course {
+
+}

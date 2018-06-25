@@ -1,0 +1,18 @@
+package com.soap.webservices.soapmanagement;
+
+import org.springframework.ws.server.endpoint.annotation.Endpoint;
+
+import com.springwebservice.courses.GetCourseDetailsRequest;
+import com.springwebservice.courses.GetCourseDetailsResponse;
+
+@Endpoint
+public class GetCourseDetails {
+
+	public GetCourseDetailsResponse processCourseDetails(GetCourseDetailsRequest request) {
+		
+		GetCourseDetailsResponse response = new GetCourseDetailsResponse();
+		
+		return response;
+		
+	}
+}

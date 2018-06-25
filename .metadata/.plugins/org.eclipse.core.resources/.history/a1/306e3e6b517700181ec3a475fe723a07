@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+		targetNamespace="http://springwebservice.com/courses" 
+		xmlns:tns="http://springwebservice.com/courses" elementFormDefault="qualified">
+		<element name="GetCourseDetailsRequest">
+			<complexType>
+				<sequence>
+					<element name="Id" type="int"></element>
+				</sequence>
+			</complexType>
+		</element>
+		
+		<element name="GetCourseDetailsResponse">
+			<complexType>
+				<sequence>
+					<element name="Id" type="int"></element>
+					<element name="Name" type="string"></element>
+					<element name="Description" type="string"></element>
+				</sequence>
+			</complexType>
+		</element>
+		
+</schema>

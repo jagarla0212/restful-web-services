@@ -1,0 +1,14 @@
+package com.springboot.demo.sringwithboot;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class QuickSortAlgorithm implements Sorting{
+
+	@Override
+	public int[] sort(int[] numbers, int numberToFind) {
+		
+		return numbers;
+	}
+
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetCourseDetailsRequest xmlns="http://springwebservice.com/courses" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://springwebservice.com/courses CourseDetails.xsd">
+	<Id>123</Id>
+</GetCourseDetailsRequest>

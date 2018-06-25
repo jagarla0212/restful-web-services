@@ -1,0 +1,22 @@
+package com.soap.webservices.soapmanagement.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.soap.webservices.soapmanagement.bean.Course;
+
+@Component
+public class CourseDetailsService {
+	
+	private static List<Course> courses = new ArrayList<>();
+	
+	static {
+		courses.add( new Course(1,"spring 1", "spring with WS"));
+		courses.add( new Course(2,"spring 2", "spring with RS"));
+		courses.add( new Course(3,"spring 3", "spring boot"));
+	}
+	
+
+}
